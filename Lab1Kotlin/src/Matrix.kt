@@ -1,3 +1,4 @@
+import java.io.File
 import java.math.BigInteger
 import java.util.*
 
@@ -31,7 +32,7 @@ class Matrix(
     }
 
     override fun toString(): String {
-        return matrix.joinToString(separator = "\n\n") { row -> row.joinToString(separator = "\t\t") }
+        return matrix.joinToString(separator = "\n") { row -> row.joinToString(separator = " ") }
     }
 
     companion object {
